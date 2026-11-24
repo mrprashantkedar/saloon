@@ -1,42 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Explore haircuts, beard grooming and styling at Fresh Cut Salon.">
-<title>Fresh Cut Salon</title>
-<style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#f7f2e7;color:#22251e;font:1rem/1.65 system-ui,sans-serif}
-header,main section,footer{padding:1.5rem max(6vw,calc((100% - 70rem)/2))}
-header{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;background:#23362b;color:#fff}
-a{color:inherit;text-underline-offset:.25em}
-.hero{padding-block:clamp(4rem,11vw,9rem);background:#23362b;color:#fff}
-h1,h2,h3{font-family:Georgia,serif;line-height:1.1;margin:0 0 .65em}
-h1{font-size:clamp(3.5rem,10vw,8rem);max-width:9ch}
-h2{font-size:clamp(2rem,5vw,3.5rem)}
-.hero p{max-width:35ch;font-size:1.2rem;margin:0 0 2rem;color:#e5ebde}
-.button{display:inline-block;background:#e9bc74;color:#22251e;border-radius:.4rem;padding:.75rem 1.125rem;font-weight:700;text-decoration:none}
-section#services{padding-block:clamp(3rem,7vw,6rem)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem}
-article{background:#fffaf2;padding:1.5rem;border:1px solid #d8cdbb;border-radius:.5rem}
-article p{margin-bottom:0}
-footer{border-top:1px solid #d8cdbb}
-a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
-</head>
-<body>
-<header><strong>Fresh Cut Salon</strong><nav aria-label="Main navigation"><a href="#services">Services</a></nav></header>
-<main>
-<section class="hero"><h1>A fresh cut. A fresh look.</h1><p>Haircuts, beard grooming and styling for everyday looks and special occasions.</p><a class="button" href="#services">See services</a></section>
-<section id="services"><h2>Salon services</h2><div class="cards">
-<article><h3>Haircuts</h3><p>From a quick trim to a whole new shape.</p></article>
-<article><h3>Beard grooming</h3><p>Beard trims, shaping and clean edges.</p></article>
-<article><h3>Hair styling</h3><p>Blow-drying and finishing for everyday wear or an event.</p></article>
-</div></section>
-</main>
-<footer>Fresh Cut Salon · Demo website</footer>
-</body>
-</html>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fresh Cut Salon | Haircut lookbook & prices</title><meta name="description" content="Compare haircut references, grooming prices and timings. Build and share your Fresh Cut Salon visit plan."><style>*{box-sizing:border-box}body{margin:0;background:#f7f3e9;color:#212e27;font:17px/1.55 system-ui}header,main,footer{max-width:1100px;margin:auto;padding:22px clamp(18px,4vw,50px)}header,nav,.row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}header{border-bottom:1px solid #c6c7b9}a{color:inherit}h1,h2,h3{font-family:Georgia,serif;line-height:1.05}h1{font-size:clamp(3rem,8vw,7rem);margin:.25em 0}h2{font-size:clamp(2rem,5vw,3.8rem);margin:0 0 .35em}section{padding:40px 0}.hero{background:#20392d;color:#fff;padding:clamp(22px,5vw,64px);margin-top:12px;border-radius:10px}.hero p{max-width:40ch}.btn,button{display:inline-block;background:#edc987;color:#19291f;padding:11px 18px;border:0;border-radius:5px;font:inherit;font-weight:650;cursor:pointer;text-decoration:none}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:18px}article,aside{background:#fffdf6;border:1px solid #cfcebf;padding:18px;border-radius:8px}article img{width:100%;height:270px;object-fit:cover;object-position:center 28%;border-radius:4px}small{display:block;color:#535e55}h3{font-size:1.65rem;margin:18px 0 6px}label{display:flex;gap:12px;align-items:center;border-bottom:1px solid #d8d7cc;padding:12px 0}label span{flex:1}input{width:20px;height:20px}select{padding:9px;font:inherit}aside{margin:20px 0;background:#e3ebdc}footer{border-top:1px solid #c6c7b9}a:focus-visible,button:focus-visible{outline:3px solid #92713e}</style><header><b>Fresh Cut Salon</b><nav><a href="#looks">Lookbook</a><a href="#menu">Rates</a><a href="#plan">My visit</a></nav></header><main><section class="hero"><h1>Find your cut.</h1><p>Go close with a buzz, keep a little length, or build volume on top. Compare the look, time and price before you choose.</p><a class="btn" href="#looks">Explore haircuts</a></section><section id="looks"><h2>The haircut lookbook</h2><p>Reference looks to show your stylist.</p><div class="grid"><article><img src="https://www.jeanlouisdavid.com.es/cdn/shop/articles/Portada_Buzz_Cut_e13f2780-31f0-4448-9930-6fe3631e2cd9.png?width=640" alt="Buzz cut hairstyle reference"><small>Photo · Jean Louis David</small><h3>Buzz cut</h3><b>₹149 · 20 min</b><p>Even clipper length all over. The easiest wash-and-go option.</p><button data-cut="0">Choose Buzz cut</button></article><article><img src="https://static.wixstatic.com/media/2b935c_3a5760e6bbd04bc6b4019db25cff4491~mv2.jpg" alt="Crew cut hairstyle reference"><small>Photo · Knucklehead Pomade</small><h3>Crew cut</h3><b>₹199 · 30 min</b><p>Tapered sides with a little length up front. Neat with minimal styling.</p><button data-cut="1">Choose Crew cut</button></article><article><img src="https://cdn.shopify.com/s/files/1/2384/0833/files/Quiff_With_High_Taper.png?v=1772556849" alt="Modern quiff hairstyle reference"><small>Photo · Pete & Pedro</small><h3>Modern quiff</h3><b>₹249 · 40 min</b><p>A lifted front and tapered sides. Best if you enjoy styling your hair.</p><button data-cut="2">Choose Modern quiff</button></article></div></section><section id="menu"><h2>Build your visit</h2><p>Sample rates in rupees. Confirm the final price and appointment with your stylist.</p><aside><b>Cut + beard combo</b><p>Pair any haircut with a beard trim for ₹30 off the estimated total.</p></aside><select id="filter" aria-label="Filter service menu"><option>All services</option><option>Haircuts</option><option>Beard & shave</option><option>Care & styling</option></select><div id="items"><label data-group="1"><input type="checkbox" value="0"><span>Buzz cut<small>20 minutes</small></span><b>₹149</b></label><label data-group="1"><input type="checkbox" value="1"><span>Crew cut<small>30 minutes</small></span><b>₹199</b></label><label data-group="1"><input type="checkbox" value="2"><span>Modern quiff<small>40 minutes</small></span><b>₹249</b></label><label data-group="2"><input type="checkbox" value="3"><span>Beard trim<small>15 minutes</small></span><b>₹99</b></label><label data-group="2"><input type="checkbox" value="4"><span>Beard sculpt<small>25 minutes</small></span><b>₹149</b></label><label data-group="2"><input type="checkbox" value="5"><span>Clean shave<small>20 minutes</small></span><b>₹99</b></label><label data-group="3"><input type="checkbox" value="6"><span>Hair wash<small>10 minutes</small></span><b>₹69</b></label><label data-group="3"><input type="checkbox" value="7"><span>Blow-dry styling<small>20 minutes</small></span><b>₹149</b></label><label data-group="3"><input type="checkbox" value="8"><span>Head massage<small>25 minutes</small></span><b>₹199</b></label><label data-group="3"><input type="checkbox" value="9"><span>Hair spa<small>45 minutes</small></span><b>₹449</b></label><label data-group="3"><input type="checkbox" value="10"><span>Grey blending<small>45 minutes</small></span><b>₹399</b></label><label data-group="3"><input type="checkbox" value="11"><span>Face cleanup<small>30 minutes</small></span><b>₹299</b></label></div></section><aside id="plan"><h2>My visit</h2><p id="summary" aria-live="polite"></p><a class="btn" id="share" target="_blank" rel="noopener">Share plan on WhatsApp</a><p><small>Your plan stays on this device. Sharing sends your selection to a contact you choose.</small></p></aside></main><footer>Fresh Cut Salon · Men's grooming</footer><script>
+const services=[["Buzz cut",149,20],["Crew cut",199,30],["Modern quiff",249,40],["Beard trim",99,15],["Beard sculpt",149,25],["Clean shave",99,20],["Hair wash",69,10],["Blow-dry styling",149,20],["Head massage",199,25],["Hair spa",449,45],["Grey blending",399,45],["Face cleanup",299,30]];
+const boxes=[...document.querySelectorAll('input')];
+function update(){
+ const ids=boxes.filter(b=>b.checked).map(b=>Number(b.value));
+ const discount=ids.some(i=>i<3)&&ids.includes(3)?30:0;
+ const price=ids.reduce((sum,i)=>sum+services[i][1],0)-discount;
+ const time=ids.reduce((sum,i)=>sum+services[i][2],0);
+ const message=ids.map(i=>services[i][0]).join(', ')+' · ₹'+price+' · '+time+' min'+(discount?' (₹30 combo saving)':'');
+ summary.textContent=ids.length?message:'Choose services to see your estimated price and time.';
+ share.style.display=ids.length?'inline-block':'none';
+ share.href='https://wa.me/?text='+encodeURIComponent('My Fresh Cut Salon plan: '+message+' '+location.href.split('#')[0]);
+ try{localStorage.setItem('freshcut-menu-v1',JSON.stringify(ids))}catch{}
+}
+function choose(box){
+ if(box.checked&&Number(box.value)<3)boxes.slice(0,3).forEach(b=>{if(b!==box)b.checked=false});
+ update();
+}
+try{const saved=JSON.parse(localStorage.getItem('freshcut-menu-v1')||'[]');boxes.forEach((b,i)=>b.checked=saved.includes(i))}catch{}
+boxes.forEach(b=>b.onchange=()=>choose(b));
+document.querySelectorAll('[data-cut]').forEach(btn=>btn.onclick=()=>{const b=boxes[Number(btn.dataset.cut)];b.checked=true;choose(b);location.hash='plan'});
+filter.onchange=()=>document.querySelectorAll('[data-group]').forEach(row=>row.style.display=!filter.selectedIndex||Number(row.dataset.group)===filter.selectedIndex?'flex':'none');
+update();
+</script></html>

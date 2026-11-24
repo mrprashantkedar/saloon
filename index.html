@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore haircuts, beard grooming and styling at Fresh Cut Salon.">
+<title>Fresh Cut Salon</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f7f2e7;color:#22251e;font:1rem/1.65 system-ui,sans-serif}
+header,main section,footer{padding:1.5rem max(6vw,calc((100% - 70rem)/2))}
+header{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;background:#23362b;color:#fff}
+a{color:inherit;text-underline-offset:.25em}
+.hero{padding-block:clamp(4rem,11vw,9rem);background:#23362b;color:#fff}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.1;margin:0 0 .65em}
+h1{font-size:clamp(3.5rem,10vw,8rem);max-width:9ch}
+h2{font-size:clamp(2rem,5vw,3.5rem)}
+.hero p{max-width:35ch;font-size:1.2rem;margin:0 0 2rem;color:#e5ebde}
+.button{display:inline-block;background:#e9bc74;color:#22251e;border-radius:.4rem;padding:.75rem 1.125rem;font-weight:700;text-decoration:none}
+section#services{padding-block:clamp(3rem,7vw,6rem)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem}
+article{background:#fffaf2;padding:1.5rem;border:1px solid #d8cdbb;border-radius:.5rem}
+article p{margin-bottom:0}
+footer{border-top:1px solid #d8cdbb}
+a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><strong>Fresh Cut Salon</strong><nav aria-label="Main navigation"><a href="#services">Services</a></nav></header>
+<main>
+<section class="hero"><h1>A fresh cut. A fresh look.</h1><p>Haircuts, beard grooming and styling for everyday looks and special occasions.</p><a class="button" href="#services">See services</a></section>
+<section id="services"><h2>Salon services</h2><div class="cards">
+<article><h3>Haircuts</h3><p>From a quick trim to a whole new shape.</p></article>
+<article><h3>Beard grooming</h3><p>Beard trims, shaping and clean edges.</p></article>
+<article><h3>Hair styling</h3><p>Blow-drying and finishing for everyday wear or an event.</p></article>
+</div></section>
+</main>
+<footer>Fresh Cut Salon · Demo website</footer>
+</body>
+</html>
